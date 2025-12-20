@@ -89,7 +89,98 @@ original files are removed
 
 `encryption_key.bin` is created
 
-ransom popup appears
+ ransom popup appears
 
-correct amount reveals hex key
-its default dummy pop up amount  is `10000`
+ correct amount reveals hex key
+ its default dummy pop up amount  is `10000`
+
+ 
+🔹 Step 3 – Run Decryption
+```python3 decryptor.py```
+
+
+The script will:
+
+read key from `encryption_key.bin` automatically OR
+
+ask user for key OR
+
+read clipboard key
+
+Locked files `.locked` will be restored to their original filenames.
+
+--- 
+
+### 🔍 How Encryption Works
+
+For every file found in `TESTFILES`:
+
+read file bytes
+
+generate secure `32-byte AES` key (if not already)
+
+generate random `12-byte` nonce
+
+encrypt using `AES-GCM`
+
+write output as:
+
+`<filename>.locked`
+
+delete original file
+### 🔓 How Decryption Works
+
+For each file ending with `.locked`:
+
+read encrypted file bytes
+
+extract `nonce` (first 12 bytes)
+
+extract `ciphertext`
+
+`AES-GCM` decrypt using provided key
+
+restore original filename
+
+delete encrypted file
+
+If key or tag mismatch → fails safely.
+
+### 🧠 Why AES-GCM?
+
+`AES-GCM` is widely used in:
+
+`TLS 1.2+` `HTTPS`
+
+disk encryption
+
+secure messaging
+
+### 🛡 Security & Ethical Notes
+
+This project demonstrates concepts similar to real ransomware.
+However, this implementation is restricted to a single folder to prevent harm.
+
+To use responsibly:
+
+ ☑ only test with non-important files
+
+ ☑ run inside isolated environments
+
+ ☑ never distribute executable versions
+
+ ☑ always inform and obtain permission
+
+### 📚 Learning Outcomes
+
+Through this project, students understand:
+
+encryption workflows
+
+ransomware attack chain
+
+key/nonce management
+
+secure coding practices
+
+GUI-based social engineering simulation
