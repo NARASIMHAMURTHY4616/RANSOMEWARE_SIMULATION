@@ -184,3 +184,7 @@ key/nonce management
 secure coding practices
 
 GUI-based social engineering simulation
+
+### future improvements / projects 
+ * defend against ransomware 
+
