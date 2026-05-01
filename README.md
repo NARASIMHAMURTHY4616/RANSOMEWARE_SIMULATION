@@ -64,6 +64,20 @@ Important:
 
 ---
 
+
+## 🧩 Key components
+
+ * Key (256 bits) — secret, must be protecte
+
+ * Nonce / IV (typically 96 bits) — must be unique per encryption
+ 
+ * Ciphertext — encrypted data
+  
+ * Auth tag (128 bits typical) — verifies integrity
+ 
+ * AAD (optional) — additional authenticated data (not encrypted, but protected)
+
+---
 ## ⚙️ Requirements
 
 - Python 3.8+
