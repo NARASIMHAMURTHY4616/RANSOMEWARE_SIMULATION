@@ -93,7 +93,7 @@ Install dependency:
 Add dummy files into it.
 
 🔹 Step 2 – Run Encryption
-```python3 encryptor.py```
+```python3 "RANSOMEWARE DECRIPT.py"RANSOMEWARE ENCRIPT.py```
 
 
 #### After running:
@@ -111,7 +111,7 @@ original files are removed
 
  
 🔹 Step 3 – Run Decryption
-```python3 decryptor.py```
+```python3 RANSOMEWARE DECRIPT.py```
 
 
 The script will:
