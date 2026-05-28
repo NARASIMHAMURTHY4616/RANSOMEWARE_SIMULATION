@@ -91,13 +91,19 @@ Install dependency:
 
 
  ` bash` 
- ```pip install requirements.txt ```
+ 
+ ``` pip install requirements.txt  ```
+ 
 ## ▶️ Usage
 🔹 Step 1 – Create TESTFILES
+
+
 ```mkdir ~/TESTFILES ```
+
 Add dummy files into it.
 
 🔹 Step 2 – Run Encryption
+
 ```python3 "RANSOMEWARE DECRIPT.py"RANSOMEWARE ENCRIPT.py```
 
 
@@ -116,6 +122,7 @@ original files are removed
 
  
 🔹 Step 3 – Run Decryption
+
 ```python3 RANSOMEWARE DECRIPT.py```
 
 
@@ -130,6 +137,7 @@ read clipboard key
 Locked files `.locked` will be restored to their original filenames.
 
 --- 
+
 
 ### 🔍 How Encryption Works
 
@@ -148,6 +156,8 @@ write output as:
 `<filename>.locked`
 
 delete original file
+
+
 ### 🔓 How Decryption Works
 
 For each file ending with `.locked`:
@@ -166,15 +176,20 @@ delete encrypted file
 
 If key or tag mismatch → fails safely.
 
+
+
 ### 🧠 Why AES-GCM?
 
 `AES-GCM` is widely used in:
 
 `TLS 1.2+` `HTTPS`
 
+
 disk encryption
 
 secure messaging
+
+
 
 ### 🛡 Security & Ethical Notes
 
@@ -205,6 +220,9 @@ secure coding practices
 
 GUI-based social engineering simulation
 
+
+
 ### future improvements / projects 
  * defend against ransomware 
 
+give a star on gitub for me to encourage
