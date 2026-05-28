@@ -77,16 +77,21 @@ Important:
  
  * AAD (optional) — additional authenticated data (not encrypted, but protected)
 
+
 ---
+
+
 ## ⚙️ Requirements
 
 - Python 3.8+
 - cryptography package  
 
+
 Install dependency:
 
+
  ` bash` 
- ```pip install cryptography ```
+ ```pip install requirements.txt ```
 ## ▶️ Usage
 🔹 Step 1 – Create TESTFILES
 ```mkdir ~/TESTFILES ```
