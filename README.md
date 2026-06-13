@@ -6,8 +6,10 @@ its a  ransom ware simulation to discribe how a ransom ware attacks system and t
 This project simulates ransomware behavior for learning and cybersecurity research.  
 Do NOT use this tool on systems, devices, or networks without full permission.
 Unauthorized use may result in legal consequences.
- | note :
-  *    dont use it personal computer main os instead use a vertual machine for escaprefrom dataloss in any cases
+
+
+| note : *dont use it personal computer main os instead use a vertual machine for escaprefrom dataloss in any cases*
+
 ---
 
 ## 📌 Overview
